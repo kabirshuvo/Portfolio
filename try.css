@@ -11,11 +11,11 @@ body {
 }
 
 #menu-items {
-  margin-left: clamp(4rem, 20vw, 48rem);
+  margin-left: clamp(4rem, 20vw, 10rem);
   position: relative;
   z-index: 2;
 }
-
+/* *menu Items hover effect on background */
 #menu[data-active-index="0"] > #menu-background-pattern {
   background-position: 0% -25%;
 }
@@ -32,26 +32,27 @@ body {
   background-position: 0% -100%;
 }
 
+/* *menu Items hover effect on background ---Image--- */
 #menu[data-active-index="0"] > #menu-background-image {
-  background-position: center 45%;
+  background-position: center 90%;
 }
 
 #menu[data-active-index="1"] > #menu-background-image {
-  background-position: center 50%;
+  background-position: center 70%;
 }
 
 #menu[data-active-index="2"] > #menu-background-image {
-  background-position: center 55%;
+  background-position: center 50%;
 }
 
 #menu[data-active-index="3"] > #menu-background-image {
-  background-position: center 60%;
+  background-position: center 10%;
 }
 
 #menu-background-pattern {
   background-image: radial-gradient(
-    rgba(255, 255, 255, 0.1) 9%,
-    transparent 9%
+    rgba(255, 255, 255, 0.05) 9%,
+    transparent 99%
   );
   background-position: 0% 0%;
   background-size: 12vmin 12vmin;
@@ -66,7 +67,7 @@ body {
 }
 
 #menu-background-image {
-  background-image: url("https://images.unsplash.com/photo-1457131760772-7017c6180f05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1153&q=80");
+  background-image: url("https://images.unsplash.com/photo-1491609154219-ffd3ffafd992?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
   background-position: center 40%;
   background-size: 100vmax;
   height: 100%;
@@ -99,7 +100,7 @@ body {
 }
 
 .menu-item {
-  color: white;
+  color: whitesmoke;
   cursor: pointer;
   display: block;
   font-family: "Ibarra Real Nova", serif;
